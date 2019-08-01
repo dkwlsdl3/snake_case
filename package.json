@@ -1,5 +1,6 @@
 {
   "name": "snake_case",
+  "homepage": "https://dkwlsdl3.github.io/snake_case",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,12 +8,15 @@
     "@types/node": "12.6.8",
     "@types/react": "16.8.24",
     "@types/react-dom": "16.8.5",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "typescript": "3.5.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -32,5 +36,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0"
   }
 }
